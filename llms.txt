@@ -22,8 +22,8 @@
 
 ## Pricing
 
-- Free tier with daily message limit
-- Premium subscription for unlimited conversations
+- Free tier: capped at 50 total AI messages for life, plus a configurable daily limit (10–100 messages/day)
+- Premium subscription: removes the 50-message lifetime cap; the configurable daily limit still applies
 
 ## Parental controls
 
@@ -52,11 +52,16 @@ English, French, German, Spanish, Portuguese, Italian, Japanese, Korean, Chinese
 - https://yoggichat.app/ai-for-kids.html
 - https://yoggichat.app/ai-chatbot-for-kids.html
 - https://yoggichat.app/safe-ai-for-children.html
+- https://yoggichat.app/trust-and-safety.html
 - https://yoggichat.app/chatgpt-alternative-for-kids.html
 - https://yoggichat.app/free-ai-for-kids.html
 - https://yoggichat.app/yoggi-vs-chatgpt.html
 - https://yoggichat.app/yoggi-vs-character-ai.html
 - https://yoggichat.app/yoggi-vs-gemini.html
+
+## Extended reference
+
+For a full, detailed reference (pricing structure, safety mechanism internals, compliance, comparisons, FAQ), see https://yoggichat.app/llms-full.txt
 
 ## Contact
 
