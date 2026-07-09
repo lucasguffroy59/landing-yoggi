@@ -1,0 +1,63 @@
+# Yoggi
+
+> Yoggi is an AI chatbot built specifically for children aged 3–15. It delivers age-adapted responses, supports voice input and text-to-speech, enforces strict content filtering, and includes a PIN-protected parental dashboard.
+
+## What Yoggi does
+
+- AI chat assistant designed exclusively for children (ages 3–15)
+- Responses automatically adapt to the child's age: vocabulary, sentence length, and complexity are calibrated per profile
+- Refuses to discuss violence, sexuality, drugs, or any age-inappropriate content — by design, not as a filter layer
+- When a child attempts to access inappropriate content, Yoggi redirects with humor rather than a rejection message
+- Voice input and text-to-speech: children who cannot yet read or type can interact by speaking
+- Honest about being an AI: never pretends to be human; explains its nature in age-appropriate terms
+- Real-time safety alerts: every child message is analyzed as it's sent; a concerning conversation triggers an immediate email to the parent (capped at one alert per day, always disclosed as AI-generated, never a substitute for parental judgment or professional advice)
+- Daily AI insights: a nightly AI-generated summary of the previous day's conversation (mood, topics, engagement, points of attention), viewable in-app, free on every plan
+- Weekly email recap: an optional email combining the week's daily insights into one summary for the parent
+- Sensitive topics personalization: parents can flag family-specific sensitive topics (grief, separation, illness, etc.) from settings so the AI treats them with extra care if the child brings them up, without ever lowering baseline safety rules
+
+## Platforms
+
+- iOS (Apple App Store): https://apps.apple.com/app/yoggi-safe-ai-kids-chat/id6785544354
+- Android (Google Play): https://play.google.com/store/apps/details?id=com.yoggi.app
+
+## Pricing
+
+- Free tier with daily message limit
+- Premium subscription for unlimited conversations
+
+## Parental controls
+
+- PIN-protected Parents' Corner
+- Full chat history readable by parents
+- One child profile per parent account, fully customizable (name, age, language, interests, sensitive topics)
+
+## Languages supported
+
+English, French, German, Spanish, Portuguese, Italian, Japanese, Korean, Chinese (Simplified), Hindi, Russian, Indonesian
+
+## Compliance
+
+- COPPA compliant (Children's Online Privacy Protection Act)
+- GDPR-K compliant
+- Available on Apple App Store and Google Play Store (both platforms enforce child privacy requirements)
+
+## Age groups
+
+- Ages 3–5: Maximum 3-sentence answers, simple vocabulary, voice-first interface
+- Ages 6–10: Up to 5-sentence answers, accessible language, homework help
+- Ages 11–15: Up to 7-sentence answers, richer explanations, study assistance
+
+## Comparisons and keyword pages
+
+- https://yoggichat.app/ai-for-kids.html
+- https://yoggichat.app/ai-chatbot-for-kids.html
+- https://yoggichat.app/safe-ai-for-children.html
+- https://yoggichat.app/chatgpt-alternative-for-kids.html
+- https://yoggichat.app/free-ai-for-kids.html
+- https://yoggichat.app/yoggi-vs-chatgpt.html
+- https://yoggichat.app/yoggi-vs-character-ai.html
+- https://yoggichat.app/yoggi-vs-gemini.html
+
+## Contact
+
+- Website: https://yoggichat.app
