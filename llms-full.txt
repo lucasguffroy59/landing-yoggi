@@ -18,6 +18,8 @@ Yoggi is not a companion app in the sense of simulating friendship or a relation
 - **Free tier:** capped at 50 total AI messages, for life (not per day, per month, or per session — a cumulative lifetime cap).
 - **Premium tier:** an in-app subscription (managed via RevenueCat) that removes the 50-message lifetime cap permanently. Real-time safety alerts, daily AI insights, and the weekly email recap are included on the free tier too — premium only removes the message cap.
 - **Daily message limit:** independent of the tier, every account has a configurable daily limit set by the parent, from 10 to 100 messages per day in steps of 10 (default 50), resetting each day in the child's local timezone. This limit does not lift the 50-message lifetime cap on the free tier.
+- **Voice call quota:** 5 cumulative minutes for life on the free tier, 10 minutes per day on premium. Independent of the text message quotas.
+- **AI image quota:** 5 images for life on the free tier, 15 images per day on premium. Independent of the other quotas; only images that actually generate successfully count against it.
 
 ## Platforms
 
@@ -33,10 +35,31 @@ Yoggi is not a companion app in the sense of simulating friendship or a relation
 - **Safety rules:** built into the model's core instructions for every response — no violence, sexual content, drug references, or other age-inappropriate topics. Yoggi refuses gently and redirects the conversation rather than returning a blunt rejection.
 - **Personalization without compromising safety:** parents can set a child's favorite topics (interests) to give the AI conversation starters, and can flag family-specific sensitive topics (grief, separation, illness, and others) so the AI treats them with extra care if the child brings them up. Neither setting ever overrides the baseline safety rules, and Yoggi never introduces a sensitive topic on its own.
 - **Memory:** the AI has full context of the current day's conversation (a "session" is one conversation per child per calendar day), but no memory beyond that day — context resets at midnight in the child's timezone.
+- **Free Play vs. Learning Mode:** a parent-only setting, chosen once during onboarding and editable anytime from settings (the child never sees or controls it). In Free Play, Yoggi chats about anything the child brings up — games, stories, curiosity of the moment — and can teach things along the way without ever forcing it; this is Yoggi's original, default behavior. In Learning Mode, Yoggi always steers conversations back toward reflection and discovery, never purely recreational, while keeping the same warm tone. Age adaptation and baseline safety rules apply identically in both modes, and the setting applies to both text chat and real-time voice calls.
 
 ## Voice interaction
 
 Children who cannot yet read or write fluently can use Yoggi entirely by voice: they hold a button to record up to 20 seconds of audio, it's transcribed automatically, and the transcribed text is sent as their message. Every AI response can also be played back aloud (text-to-speech), with generated audio cached to avoid regenerating the same clip.
+
+## Real-time voice call
+
+In addition to voice input inside text chat, Yoggi has a dedicated real-time voice call mode, opened with a phone-icon button on the home screen and inside conversations. It's a live, continuous two-way audio exchange — the child speaks, Yoggi replies out loud — with no text displayed on screen at all, on a dedicated call screen with a single button to hang up.
+
+- **Quota:** separate from text messages and images — 5 cumulative minutes for life on the free tier, 10 minutes per day on premium. The paywall appears once the quota is reached, in place of the call.
+- **Safety:** after the call ends, the exchanged content is analyzed for safety using the same mechanism as text messages (see "Real-time safety alerts" below), with the same consequences — an immediate email to the parent for an urgent alert, a badge in the history for a warning.
+- **Parent visibility:** the call appears in the read-only history as a conversation item, with its duration and, if relevant, a safety badge. The full transcript is viewable only by the parent; the child sees that the call happened in their own feed but cannot reopen or replay its content.
+- **Behavior:** the Free Play / Learning Mode setting applies to real-time voice calls exactly as it does to text chat.
+
+## AI image generation
+
+When a child expresses the wish to see something (asking Yoggi to show or draw it, or "what does that look like?"), Yoggi can generate an image inside the conversation.
+
+- **How it works:** the conversational AI detects the intent and produces a scene description in the same call that generates its text reply (no added latency); the backend then generates the image via a dedicated image model, with automatic fallback to a backup provider if needed.
+- **Style and safety, three layers deep:** the scene description is always wrapped in a fixed server-side template enforcing a cute, age-appropriate cartoon style with explicit safety instructions — nothing scary, no text in the image, no realistic people, no copyrighted characters — on top of the image provider's own built-in safety filters, on top of the chat's own system prompt that only allows child-appropriate scenes in the first place.
+- **Quota:** separate from text messages and voice minutes — 5 images for life on the free tier, 15 images per day on premium. Only images that are actually generated count; a failed attempt does not use up the quota.
+- **At the limit:** Yoggi explains it herself, gently, in-character, without ever mentioning a subscription or a technical limit, and never promises a drawing she can't deliver.
+- **On failure:** if generation fails (provider safety filter, outage), the image card shows a soft message ("my drawing didn't work, let's try again") instead of the image.
+- **Storage and history:** images are stored in a private bucket and served only to their owner through an authenticated endpoint; they reappear later in the read-only history, under the message that created them. Older app versions that can't render these image cards simply never see Yoggi offer to draw one.
 
 ## Real-time safety alerts (free and premium)
 
@@ -103,7 +126,13 @@ Yes, up to 50 total messages for life. A premium subscription removes that lifet
 English, French, German, Spanish, Portuguese, Italian, Japanese, Korean, Chinese (Simplified), Hindi, Russian, and Indonesian.
 
 **Does Yoggi work without reading or typing?**
-Yes. Voice input and voice playback cover the full experience for children who cannot yet read or write.
+Yes. Voice input and voice playback cover the full experience for children who cannot yet read or write. Yoggi also has a dedicated real-time voice call mode for a fully spoken, live conversation.
+
+**Can Yoggi draw pictures for my child?**
+Yes. When a child asks to see something, Yoggi can generate a cartoon-style image inside the chat, protected by three layers of safety (chat rules, a fixed style template, and the image provider's own filters).
+
+**Can I make Yoggi more focused on learning?**
+Yes. Parents can switch Yoggi between Free Play (open, playful conversation) and Learning Mode (always steered toward reflection and discovery) from settings, at any time.
 
 ## Key pages
 
@@ -113,6 +142,9 @@ Yes. Voice input and voice playback cover the full experience for children who c
 - AI chatbot for kids overview: https://yoggichat.app/ai-chatbot-for-kids.html
 - Free AI for kids: https://yoggichat.app/free-ai-for-kids.html
 - ChatGPT alternative for kids: https://yoggichat.app/chatgpt-alternative-for-kids.html
+- Real-time AI voice call for kids: https://yoggichat.app/ai-voice-call-for-kids.html
+- AI image generator for kids: https://yoggichat.app/ai-image-generator-for-kids.html
+- Free Play / Learning Mode (educational AI setting): https://yoggichat.app/ai-learning-mode-for-kids.html
 - Blog (parenting and AI safety guides): https://yoggichat.app/blog/
 
 ## Editorial policy for this file

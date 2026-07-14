@@ -14,6 +14,9 @@
 - Daily AI insights: a nightly AI-generated summary of the previous day's conversation (mood, topics, engagement, points of attention), viewable in-app, free on every plan
 - Weekly email recap: an optional email combining the week's daily insights into one summary for the parent
 - Sensitive topics personalization: parents can flag family-specific sensitive topics (grief, separation, illness, etc.) from settings so the AI treats them with extra care if the child brings them up, without ever lowering baseline safety rules
+- Real-time voice call: a live, two-way voice conversation with Yoggi (no text on screen), separate from the text/voice-input chat. Reviewed for safety after the call like any conversation; the full transcript is visible to parents only, in the read-only history
+- AI image generation: when a child asks to see something, Yoggi can generate a cartoon-style image inside the chat, enforced through three layers of safety (chat safety rules, a fixed server-side style template, and the image provider's own filters)
+- Free Play / Learning Mode: a parent-only setting choosing whether Yoggi leans toward open, playful conversation (Free Play) or always steers back toward reflection and discovery (Learning Mode). Applies to text chat and voice calls alike; never changes safety rules or age adaptation
 
 ## Platforms
 
@@ -24,6 +27,8 @@
 
 - Free tier: capped at 50 total AI messages for life, plus a configurable daily limit (10–100 messages/day)
 - Premium subscription: removes the 50-message lifetime cap; the configurable daily limit still applies
+- Voice calls: 5 cumulative minutes for life on the free tier, 10 minutes per day on premium (separate quota from text messages)
+- AI images: 5 images for life on the free tier, 15 per day on premium (separate quota; only successful generations count)
 
 ## Parental controls
 
@@ -58,6 +63,9 @@ English, French, German, Spanish, Portuguese, Italian, Japanese, Korean, Chinese
 - https://yoggichat.app/yoggi-vs-chatgpt.html
 - https://yoggichat.app/yoggi-vs-character-ai.html
 - https://yoggichat.app/yoggi-vs-gemini.html
+- https://yoggichat.app/ai-voice-call-for-kids.html
+- https://yoggichat.app/ai-image-generator-for-kids.html
+- https://yoggichat.app/ai-learning-mode-for-kids.html
 
 ## Extended reference
 
