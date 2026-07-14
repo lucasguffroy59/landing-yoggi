@@ -15,14 +15,22 @@
   function reportStoreConversion(e, href) {
     if (typeof gtag !== "function") return;
     e.preventDefault();
+
+    var navigated = false;
+    function goToStore() {
+      if (navigated) return;
+      navigated = true;
+      window.location = href;
+    }
+
     gtag("event", "conversion", {
       send_to: "AW-18092979969/lt92CP3XuqscEIHus7ND",
       value: 1.0,
       currency: "EUR",
-      event_callback: function () {
-        window.location = href;
-      },
+      event_callback: goToStore,
     });
+
+    setTimeout(goToStore, 400);
   }
 
   document.addEventListener("click", function (e) {
