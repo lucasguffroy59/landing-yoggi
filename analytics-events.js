@@ -24,7 +24,7 @@
     }
 
     gtag("event", "conversion", {
-      send_to: "AW-18092979969/lt92CP3XuqscEIHus7ND",
+      send_to: "AW-18092979969/lS6PCKHWptAcEIHus7ND",
       value: 1.0,
       currency: "EUR",
       event_callback: goToStore,
