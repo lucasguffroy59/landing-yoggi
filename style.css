@@ -144,6 +144,32 @@ nav:not(.footer-links) {
   border-radius: 16px;
   padding: 2rem;
 }
+
+/* PILLAR CARDS */
+.pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: start; }
+.pillar-card {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.25rem;
+}
+.pillar-card h3 { margin-bottom: 0.75rem; color: var(--text); }
+.pillar-featured {
+  grid-column: span 2;
+  background: var(--white);
+  border: 2px solid var(--primary);
+  box-shadow: 0 12px 40px rgba(91,63,248,0.12);
+}
+
+/* MICRO CTA */
+.micro-cta { font-size: 0.9rem; font-weight: 600; color: var(--primary); margin-top: 0.75rem; }
+.hero .micro-cta { color: rgba(255,255,255,0.75); }
+.parents-section .micro-cta { color: #a78bfa; }
+
+/* MID-PAGE CTA */
+.cta-section-mid { background: var(--light); text-align: center; padding: 3.5rem 0; }
+.cta-section-mid h2 { margin-bottom: 1.75rem; }
+.cta-section-mid .store-buttons { justify-content: center; }
 .feature-icon {
   width: 48px;
   height: 48px;
@@ -326,7 +352,8 @@ footer a:hover { color: white; }
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-inner, .parents-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .features-grid, .ages-grid, .blog-grid { grid-template-columns: 1fr; }
+  .features-grid, .ages-grid, .blog-grid, .pillars-grid { grid-template-columns: 1fr; }
+  .pillar-featured { grid-column: span 1; }
   .phone-placeholder { max-width: 200px; }
   section { padding: 3rem 0; }
   .trust-items { gap: 1rem; }
