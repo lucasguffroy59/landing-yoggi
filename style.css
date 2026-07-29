@@ -156,7 +156,7 @@ nav:not(.footer-links) {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .pillar-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(91,63,248,0.12); }
-.pillar-card h3 { margin-bottom: 0.75rem; color: var(--text); }
+.pillar-card h3 { margin-bottom: 0; color: var(--text); }
 .pillar-featured {
   grid-column: 1 / -1;
   background: var(--white);
@@ -164,8 +164,38 @@ nav:not(.footer-links) {
   border-top: 2px solid var(--primary);
   box-shadow: 0 12px 40px rgba(91,63,248,0.12);
 }
-.pillars-grid .pillar-card:nth-of-type(2) { border-top-color: var(--accent); }
-.pillars-grid .pillar-card:nth-of-type(3) { border-top-color: #0EA5E9; }
+.pillars-grid .pillar-card:nth-of-type(2) {
+  background: rgba(255,90,60,0.06);
+  border-color: rgba(255,90,60,0.25);
+  border-top-color: var(--accent);
+}
+.pillars-grid .pillar-card:nth-of-type(3) {
+  background: rgba(14,165,233,0.06);
+  border-color: rgba(14,165,233,0.25);
+  border-top-color: #0EA5E9;
+}
+
+.pillar-head { display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.85rem; }
+.pillar-icon { width: 24px; height: 24px; flex-shrink: 0; }
+.pillar-featured .pillar-icon { color: var(--primary); }
+.pillars-grid .pillar-card:nth-of-type(2) .pillar-icon { color: var(--accent); }
+.pillars-grid .pillar-card:nth-of-type(3) .pillar-icon { color: #0EA5E9; }
+.pillar-hook { font-weight: 700; color: var(--text); margin-bottom: 1rem; }
+.pillar-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.pillar-list li { position: relative; padding-left: 1.25rem; color: var(--muted); line-height: 1.6; }
+.pillar-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.pillar-featured .pillar-list li::before { background: var(--primary); }
+.pillars-grid .pillar-card:nth-of-type(2) .pillar-list li::before { background: var(--accent); }
+.pillars-grid .pillar-card:nth-of-type(3) .pillar-list li::before { background: #0EA5E9; }
 
 /* MICRO CTA */
 .micro-cta { font-size: 0.9rem; font-weight: 600; color: var(--primary); margin-top: 0.75rem; }
