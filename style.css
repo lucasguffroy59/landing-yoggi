@@ -146,10 +146,11 @@ nav:not(.footer-links) {
 }
 
 /* PILLAR CARDS */
-.pillars-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; align-items: start; }
+.pillars-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 .pillar-card {
   background: var(--light);
   border: 1px solid var(--border);
+  border-top: 4px solid var(--primary);
   border-radius: 26px;
   padding: 2.25rem;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -160,9 +161,11 @@ nav:not(.footer-links) {
   grid-column: 1 / -1;
   background: var(--white);
   border: 2px solid var(--primary);
+  border-top: 2px solid var(--primary);
   box-shadow: 0 12px 40px rgba(91,63,248,0.12);
 }
-.pillars-grid .pillar-card:nth-of-type(2) .feature-icon { background: var(--accent); }
+.pillars-grid .pillar-card:nth-of-type(2) { border-top-color: var(--accent); }
+.pillars-grid .pillar-card:nth-of-type(3) { border-top-color: #0EA5E9; }
 
 /* MICRO CTA */
 .micro-cta { font-size: 0.9rem; font-weight: 600; color: var(--primary); margin-top: 0.75rem; }
