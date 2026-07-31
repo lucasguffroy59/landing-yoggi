@@ -7,126 +7,144 @@
       "fr": "/fr/",
       "de": "/de/",
       "es-ES": "/es/",
-      "it": "/it/"
+      "it": "/it/",
+      "nl": "/nl/"
     },
     "ai-chatbot-for-kids": {
       "en": "/ai-chatbot-for-kids.html",
       "fr": "/fr/ai-chatbot-for-kids.html",
       "de": "/de/ai-chatbot-for-kids.html",
       "es-ES": "/es/ai-chatbot-for-kids.html",
-      "it": "/it/ai-chatbot-for-kids.html"
+      "it": "/it/ai-chatbot-for-kids.html",
+      "nl": "/nl/ai-chatbot-for-kids.html"
     },
     "ai-for-kids": {
       "en": "/ai-for-kids.html",
       "fr": "/fr/ai-for-kids.html",
       "de": "/de/ai-for-kids.html",
       "es-ES": "/es/ai-for-kids.html",
-      "it": "/it/ai-for-kids.html"
+      "it": "/it/ai-for-kids.html",
+      "nl": "/nl/ai-for-kids.html"
     },
     "ai-image-generator-for-kids": {
       "en": "/ai-image-generator-for-kids.html",
       "fr": "/fr/ai-image-generator-for-kids.html",
       "de": "/de/ai-image-generator-for-kids.html",
       "es-ES": "/es/ai-image-generator-for-kids.html",
-      "it": "/it/ai-image-generator-for-kids.html"
+      "it": "/it/ai-image-generator-for-kids.html",
+      "nl": "/nl/ai-image-generator-for-kids.html"
     },
     "ai-learning-mode-for-kids": {
       "en": "/ai-learning-mode-for-kids.html",
       "fr": "/fr/ai-learning-mode-for-kids.html",
       "de": "/de/ai-learning-mode-for-kids.html",
       "es-ES": "/es/ai-learning-mode-for-kids.html",
-      "it": "/it/ai-learning-mode-for-kids.html"
+      "it": "/it/ai-learning-mode-for-kids.html",
+      "nl": "/nl/ai-learning-mode-for-kids.html"
     },
     "ai-voice-call-for-kids": {
       "en": "/ai-voice-call-for-kids.html",
       "fr": "/fr/ai-voice-call-for-kids.html",
       "de": "/de/ai-voice-call-for-kids.html",
       "es-ES": "/es/ai-voice-call-for-kids.html",
-      "it": "/it/ai-voice-call-for-kids.html"
+      "it": "/it/ai-voice-call-for-kids.html",
+      "nl": "/nl/ai-voice-call-for-kids.html"
     },
     "chatgpt-alternative-for-kids": {
       "en": "/chatgpt-alternative-for-kids.html",
       "fr": "/fr/chatgpt-alternative-for-kids.html",
       "de": "/de/chatgpt-alternative-for-kids.html",
       "es-ES": "/es/chatgpt-alternative-for-kids.html",
-      "it": "/it/chatgpt-alternative-for-kids.html"
+      "it": "/it/chatgpt-alternative-for-kids.html",
+      "nl": "/nl/chatgpt-alternative-for-kids.html"
     },
     "free-ai-for-kids": {
       "en": "/free-ai-for-kids.html",
       "fr": "/fr/free-ai-for-kids.html",
       "de": "/de/free-ai-for-kids.html",
       "es-ES": "/es/free-ai-for-kids.html",
-      "it": "/it/free-ai-for-kids.html"
+      "it": "/it/free-ai-for-kids.html",
+      "nl": "/nl/free-ai-for-kids.html"
     },
     "safe-ai-for-children": {
       "en": "/safe-ai-for-children.html",
       "fr": "/fr/safe-ai-for-children.html",
       "de": "/de/safe-ai-for-children.html",
       "es-ES": "/es/safe-ai-for-children.html",
-      "it": "/it/safe-ai-for-children.html"
+      "it": "/it/safe-ai-for-children.html",
+      "nl": "/nl/safe-ai-for-children.html"
     },
     "trust-and-safety": {
       "en": "/trust-and-safety.html",
       "fr": "/fr/trust-and-safety.html",
       "de": "/de/trust-and-safety.html",
       "es-ES": "/es/trust-and-safety.html",
-      "it": "/it/trust-and-safety.html"
+      "it": "/it/trust-and-safety.html",
+      "nl": "/nl/trust-and-safety.html"
     },
     "yoggi-vs-character-ai": {
       "en": "/yoggi-vs-character-ai.html",
       "fr": "/fr/yoggi-vs-character-ai.html",
       "de": "/de/yoggi-vs-character-ai.html",
       "es-ES": "/es/yoggi-vs-character-ai.html",
-      "it": "/it/yoggi-vs-character-ai.html"
+      "it": "/it/yoggi-vs-character-ai.html",
+      "nl": "/nl/yoggi-vs-character-ai.html"
     },
     "yoggi-vs-chatgpt": {
       "en": "/yoggi-vs-chatgpt.html",
       "fr": "/fr/yoggi-vs-chatgpt.html",
       "de": "/de/yoggi-vs-chatgpt.html",
       "es-ES": "/es/yoggi-vs-chatgpt.html",
-      "it": "/it/yoggi-vs-chatgpt.html"
+      "it": "/it/yoggi-vs-chatgpt.html",
+      "nl": "/nl/yoggi-vs-chatgpt.html"
     },
     "yoggi-vs-gemini": {
       "en": "/yoggi-vs-gemini.html",
       "fr": "/fr/yoggi-vs-gemini.html",
       "de": "/de/yoggi-vs-gemini.html",
       "es-ES": "/es/yoggi-vs-gemini.html",
-      "it": "/it/yoggi-vs-gemini.html"
+      "it": "/it/yoggi-vs-gemini.html",
+      "nl": "/nl/yoggi-vs-gemini.html"
     },
     "blog-index": {
       "en": "/blog/",
       "fr": "/fr/blog/",
       "de": "/de/blog/",
       "es-ES": "/es/blog/",
-      "it": "/it/blog/"
+      "it": "/it/blog/",
+      "nl": "/nl/blog/"
     },
     "blog-is-chatgpt-safe-for-kids": {
       "en": "/blog/is-chatgpt-safe-for-kids.html",
       "fr": "/fr/blog/is-chatgpt-safe-for-kids.html",
       "de": "/de/blog/is-chatgpt-safe-for-kids.html",
       "es-ES": "/es/blog/is-chatgpt-safe-for-kids.html",
-      "it": "/it/blog/is-chatgpt-safe-for-kids.html"
+      "it": "/it/blog/is-chatgpt-safe-for-kids.html",
+      "nl": "/nl/blog/is-chatgpt-safe-for-kids.html"
     },
     "blog-best-ai-apps-for-kids-2026": {
       "en": "/blog/best-ai-apps-for-kids-2026.html",
       "fr": "/fr/blog/best-ai-apps-for-kids-2026.html",
       "de": "/de/blog/best-ai-apps-for-kids-2026.html",
       "es-ES": "/es/blog/best-ai-apps-for-kids-2026.html",
-      "it": "/it/blog/best-ai-apps-for-kids-2026.html"
+      "it": "/it/blog/best-ai-apps-for-kids-2026.html",
+      "nl": "/nl/blog/best-ai-apps-for-kids-2026.html"
     },
     "blog-how-to-introduce-ai-to-your-child": {
       "en": "/blog/how-to-introduce-ai-to-your-child.html",
       "fr": "/fr/blog/how-to-introduce-ai-to-your-child.html",
       "de": "/de/blog/how-to-introduce-ai-to-your-child.html",
       "es-ES": "/es/blog/how-to-introduce-ai-to-your-child.html",
-      "it": "/it/blog/how-to-introduce-ai-to-your-child.html"
+      "it": "/it/blog/how-to-introduce-ai-to-your-child.html",
+      "nl": "/nl/blog/how-to-introduce-ai-to-your-child.html"
     },
     "blog-ai-chatbots-real-time-parent-alerts": {
       "en": "/blog/ai-chatbots-real-time-parent-alerts.html",
       "fr": "/fr/blog/ai-chatbots-real-time-parent-alerts.html",
       "de": "/de/blog/ai-chatbots-real-time-parent-alerts.html",
       "es-ES": "/es/blog/ai-chatbots-real-time-parent-alerts.html",
-      "it": "/it/blog/ai-chatbots-real-time-parent-alerts.html"
+      "it": "/it/blog/ai-chatbots-real-time-parent-alerts.html",
+      "nl": "/nl/blog/ai-chatbots-real-time-parent-alerts.html"
     }
   }
 }
