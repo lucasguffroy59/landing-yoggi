@@ -293,7 +293,7 @@
         <a href="https://apps.apple.com/app/yoggi-safe-ai-kids-chat/id6785544354" data-ga-loc="hero"><img src="/download-app-store-en.svg" alt="Baixar na App Store" class="store-badge"></a>
         <a href="https://play.google.com/store/apps/details?id=com.yoggi.app" data-ga-loc="hero"><img src="/get-google-play-english.png" alt="Disponível no Google Play" class="store-badge"></a>
       </div>
-      <p class="micro-cta">Grátis para começar. Sem cartão de crédito.</p>
+      <p class="micro-cta">Mais de 500 famílias já confiam em nós</p>
     </div>
     <div class="mascot-frame">
       <img src="/B.png" alt="Yoggi, o mascote de IA com uma criança" width="280" style="width:100%;max-width:280px;border-radius:24px;display:block;margin:0 auto;">
@@ -598,6 +598,30 @@
     <span style="font-size:0.875rem;">© 2026 Yoggi. Todos os direitos reservados.</span>
   </div>
 </footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <div class="container sticky-cta-inner">
+    <span class="sticky-cta-text"><img src="/icon.png" alt="" class="sticky-cta-icon">Yoggi: a IA feita para crianças</span>
+    <div class="store-buttons">
+      <a href="https://apps.apple.com/app/yoggi-safe-ai-kids-chat/id6785544354" data-ga-loc="sticky"><img src="/download-app-store-en.svg" alt="Baixar na App Store" class="store-badge"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.yoggi.app" data-ga-loc="sticky"><img src="/get-google-play-english.png" alt="Disponível no Google Play" class="store-badge"></a>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var bar = document.getElementById('stickyCta');
+  var hero = document.querySelector('.hero');
+  if (!bar || !hero) return;
+  function onScroll() {
+    var pastHero = window.scrollY > hero.offsetHeight;
+    bar.classList.toggle('visible', pastHero);
+    document.body.classList.toggle('has-sticky-cta', pastHero);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
 
 </body>
 </html>
