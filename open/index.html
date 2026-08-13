@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Open Yoggi</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP6QS5YX0E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JP6QS5YX0E');
+  </script>
+
+  <!-- Smart link "ouvrir l'app" : contrairement à /get/ (qui redirige toujours vers le store, cf.
+       partage d'image depuis l'app), celui-ci tente D'ABORD d'ouvrir l'app déjà installée via son
+       schéma d'URL personnalisé ("yoggi://", cf. app-ai-for-kids/app.json::scheme), et ne bascule
+       vers le store que si rien ne s'est passé après un court délai (app non installée). Events
+       dédiés "open_redirect_app_attempt"/"open_redirect_store_fallback" pour distinguer ce trafic
+       de celui de /get/. -->
+  <script>
+  (function () {
+    var BACKEND_EVENTS_URL = "https://yoggi-backend.up.railway.app/api/analytics/events";
+    var LANDING_ANALYTICS_TOKEN = "d9ed57ddfdcea52954c96539f32a6a3edf36b05ce35b140b";
+    var APP_STORE_URL = "https://apps.apple.com/app/yoggi-safe-ai-kids-chat/id6785544354";
+    var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.yoggi.app";
+    var APP_SCHEME_URL = "yoggi://";
+    // Délai avant repli vers le store : assez court pour ne pas laisser un utilisateur sans app
+    // attendre trop longtemps, assez long pour laisser l'OS le temps de basculer vers l'app si
+    // elle est installée (le tab perd alors le focus avant l'expiration de ce délai).
+    var FALLBACK_DELAY_MS = 1500;
+
+    function getAnonymousId() {
+      var key = "yoggi_anonymous_id";
+      var id = localStorage.getItem(key);
+      if (!id) {
+        id = crypto.randomUUID();
+        localStorage.setItem(key, id);
+      }
+      return id;
+    }
+
+    function sendBackendEvent(eventName, properties) {
+      try {
+        fetch(BACKEND_EVENTS_URL, {
+          method: "POST",
+          keepalive: true,
+          headers: {
+            "Content-Type": "application/json",
+            "X-App-Token": LANDING_ANALYTICS_TOKEN,
+          },
+          body: JSON.stringify({
+            anonymousId: getAnonymousId(),
+            eventName: eventName,
+            properties: properties || {},
+          }),
+        }).catch(function () {});
+      } catch (err) {}
+    }
+
+    function trackEvent(eventName, properties) {
+      sendBackendEvent(eventName, properties);
+      if (typeof gtag === "function") gtag("event", eventName, properties);
+    }
+
+    // Tente d'ouvrir l'app installée, puis redirige vers `storeUrl` seulement si l'OS n'a jamais
+    // basculé vers l'app (le document reste visible/au premier plan tout le délai) — sinon
+    // l'utilisateur est déjà parti dans l'app, une redirection derrière lui n'aurait aucun sens.
+    function tryOpenAppThenFallback(platform, storeUrl) {
+      var switchedAway = false;
+      var onVisibilityChange = function () {
+        if (document.hidden) switchedAway = true;
+      };
+      document.addEventListener("visibilitychange", onVisibilityChange);
+
+      trackEvent("open_redirect_app_attempt", { platform: platform });
+      window.location.href = APP_SCHEME_URL;
+
+      setTimeout(function () {
+        document.removeEventListener("visibilitychange", onVisibilityChange);
+        if (!switchedAway) {
+          trackEvent("open_redirect_store_fallback", { platform: platform });
+          window.location.replace(storeUrl);
+        }
+      }, FALLBACK_DELAY_MS);
+    }
+
+    var ua = navigator.userAgent || "";
+    var isIOS = /iPhone|iPad|iPod/i.test(ua);
+    var isAndroid = /Android/i.test(ua);
+
+    if (isIOS) {
+      tryOpenAppThenFallback("ios", APP_STORE_URL);
+    } else if (isAndroid) {
+      tryOpenAppThenFallback("android", PLAY_STORE_URL);
+    }
+    // Sinon (desktop) : pas de schéma d'app ni de store pertinent, on laisse la page de repli
+    // ci-dessous s'afficher (mêmes boutons de téléchargement que /get/).
+  })();
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFF8EC;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      text-align: center;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+    .card { max-width: 360px; }
+    .card img.logo { width: 96px; height: 96px; border-radius: 24px; margin-bottom: 16px; }
+    .card h1 { font-size: 22px; margin: 0 0 8px; color: #2B2B2B; }
+    .card p { font-size: 15px; color: #6B6B6B; margin: 0 0 24px; }
+    .badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .badges img { height: 48px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="../icon.png" alt="Yoggi">
+    <h1>Open Yoggi</h1>
+    <p>The safe AI built for your child's age.</p>
+    <div class="badges">
+      <a href="https://apps.apple.com/app/yoggi-safe-ai-kids-chat/id6785544354">
+        <img src="../download-app-store-en.svg" alt="Download on the App Store">
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.yoggi.app">
+        <img src="../get-google-play-english.png" alt="Get it on Google Play">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
