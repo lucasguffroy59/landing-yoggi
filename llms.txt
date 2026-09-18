@@ -16,6 +16,7 @@
 - Sensitive topics personalization: parents can flag family-specific sensitive topics (grief, separation, illness, etc.) from settings so the AI treats them with extra care if the child brings them up, without ever lowering baseline safety rules
 - Real-time voice call: a live, two-way voice conversation with Yoggi (no text on screen), separate from the text/voice-input chat. Reviewed for safety after the call like any conversation; the full transcript is visible to parents only, in the read-only history
 - AI image generation: when a child asks to see something, Yoggi can generate a cartoon-style image inside the chat, enforced through three layers of safety (chat safety rules, a fixed server-side style template, and the image provider's own filters)
+- AI bedtime stories: Yoggi tells a full bedtime story out loud, in the same voice used elsewhere in the app, either from an idea the child describes or as a complete surprise Yoggi invents. A short preparation step checks the idea is age-appropriate before any story is generated, and every story ends on a calm, positive note. Playback continues with the screen locked or off, with lock-screen controls
 - Free Play / Learning Mode: a parent-only setting choosing whether Yoggi leans toward open, playful conversation (Free Play) or always steers back toward reflection and discovery (Learning Mode). Applies to text chat and voice calls alike; never changes safety rules or age adaptation
 
 ## Platforms
@@ -26,9 +27,10 @@
 ## Pricing
 
 - Free tier: capped at 50 total AI messages for life, plus a configurable daily limit (10–100 messages/day)
-- Premium subscription: removes the 50-message lifetime cap; the configurable daily limit still applies
+- Premium subscription: removes the 50-message lifetime cap, and raises the daily limits on voice calls, images, and bedtime stories; the configurable daily message limit still applies
 - Voice calls: 5 cumulative minutes for life on the free tier, 10 minutes per day on premium (separate quota from text messages)
 - AI images: 5 images for life on the free tier, 15 per day on premium (separate quota; only successful generations count)
+- Bedtime stories: 1 story for life on the free tier (up to 5 minutes), 1 per day on premium (up to 15 minutes), separate from the other quotas
 
 ## Parental controls
 
@@ -38,7 +40,7 @@
 
 ## Languages supported
 
-English, French, German, Spanish, Portuguese, Italian, Japanese, Korean, Chinese (Simplified), Hindi, Russian, Indonesian
+19 languages: English, French, German, Spanish, Portuguese (Portugal and Brazil), Italian, Dutch, Polish, Turkish, Ukrainian, Vietnamese, Japanese, Korean, Chinese (Simplified and Traditional), Hindi, Russian, and Indonesian
 
 ## Compliance
 
@@ -66,6 +68,7 @@ English, French, German, Spanish, Portuguese, Italian, Japanese, Korean, Chinese
 - https://yoggichat.app/ai-voice-call-for-kids.html
 - https://yoggichat.app/ai-image-generator-for-kids.html
 - https://yoggichat.app/ai-learning-mode-for-kids.html
+- https://yoggichat.app/ai-bedtime-stories-for-kids.html
 
 ## Extended reference
 
