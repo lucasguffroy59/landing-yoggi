@@ -3,15 +3,18 @@
 # the site focuses on English (US) until it is indexed. To bring a language back,
 # remove it from this list, then re-run scripts/ensure-markers.mjs,
 # scripts/build-hreflang.mjs and scripts/build-lang-switcher.mjs and add its URLs to sitemap.xml.
+#
+# Entries keep a trailing slash: Jekyll excludes any path that *starts with* an entry,
+# so a bare "tr" or "fr" would also drop trust-and-safety.html and free-ai-for-kids.html.
 exclude:
-  - fr
-  - de
-  - es
-  - it
-  - nl
-  - ja
-  - pt
-  - sv
-  - id
-  - tr
-  - vi
+  - fr/
+  - de/
+  - es/
+  - it/
+  - nl/
+  - ja/
+  - pt/
+  - sv/
+  - id/
+  - tr/
+  - vi/
