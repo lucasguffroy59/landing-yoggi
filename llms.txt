@@ -6,7 +6,7 @@
 
 - AI chat assistant designed exclusively for children (ages 3–15)
 - Responses automatically adapt to the child's age: vocabulary, sentence length, and complexity are calibrated per profile
-- Refuses to discuss violence, sexuality, drugs, or any age-inappropriate content — by design, not as a filter layer
+- Refuses to discuss violence, sexuality, drugs, or any age-inappropriate content: by design, not as a filter layer
 - When a child attempts to access inappropriate content, Yoggi redirects with humor rather than a rejection message
 - Voice input and text-to-speech: children who cannot yet read or type can interact by speaking
 - Honest about being an AI: never pretends to be human; explains its nature in age-appropriate terms
@@ -42,11 +42,12 @@
 
 19 languages: English, French, German, Spanish, Portuguese (Portugal and Brazil), Italian, Dutch, Polish, Turkish, Ukrainian, Vietnamese, Japanese, Korean, Chinese (Simplified and Traditional), Hindi, Russian, and Indonesian
 
-## Compliance
+## Privacy
 
-- COPPA compliant (Children's Online Privacy Protection Act)
-- GDPR-K compliant
-- Available on Apple App Store and Google Play Store (both platforms enforce child privacy requirements)
+- No ads, no commercial use of children's conversations
+- The child has no account of their own; only the parent signs in
+- The child's first name is never shared with AI partners (OpenAI, Google)
+- Available on the Apple App Store and Google Play Store
 
 ## Age groups
 
@@ -57,10 +58,8 @@
 ## Comparisons and keyword pages
 
 - https://yoggichat.app/ai-for-kids.html
-- https://yoggichat.app/ai-chatbot-for-kids.html
 - https://yoggichat.app/safe-ai-for-children.html
 - https://yoggichat.app/trust-and-safety.html
-- https://yoggichat.app/chatgpt-alternative-for-kids.html
 - https://yoggichat.app/free-ai-for-kids.html
 - https://yoggichat.app/yoggi-vs-chatgpt.html
 - https://yoggichat.app/yoggi-vs-character-ai.html

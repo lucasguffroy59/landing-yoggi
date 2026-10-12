@@ -1,0 +1,17 @@
+# GitHub Pages (Jekyll) build config.
+# Non-English language folders are kept in the repo but not published for now:
+# the site focuses on English (US) until it is indexed. To bring a language back,
+# remove it from this list, then re-run scripts/ensure-markers.mjs,
+# scripts/build-hreflang.mjs and scripts/build-lang-switcher.mjs and add its URLs to sitemap.xml.
+exclude:
+  - fr
+  - de
+  - es
+  - it
+  - nl
+  - ja
+  - pt
+  - sv
+  - id
+  - tr
+  - vi
