@@ -4,7 +4,7 @@
 
 ## What Yoggi is
 
-Yoggi is a conversational AI companion built specifically for children aged 3 to 15, available on iOS and Android. The child talks to "Yoggi," an AI with a warm, feminine personality, by text or by voice. Yoggi is designed for supervised use: an adult completes the initial setup, an optional PIN protects the settings screen, the parent configures a daily message limit, and the parent can receive a weekly email recap of the child's activity.
+Yoggi is a conversational AI companion built specifically for children aged 3 to 15, available on iOS and Android. The child talks to "Yoggi," an AI with a warm, feminine personality, by text or by voice. Yoggi is designed for supervised use: an adult completes the initial setup, an optional PIN protects the settings screen, the parent configures a daily message limit, reads the full conversation history and a free daily AI summary, and can receive a weekly email recap and immediate safety alerts by email. A parent account is optional: every feature works without one, and an account is only needed for the emails and to keep the child's creations when changing phones.
 
 Yoggi is a friendly AI buddy for kids, but not a companion app: it never simulates friendship or a relationship. It positions itself as a safety-first, utility-first alternative to general-purpose AI chatbots (like ChatGPT or Gemini) and to AI companion apps (like Character.AI) that were not purpose-built for children.
 
@@ -15,10 +15,10 @@ Yoggi is a friendly AI buddy for kids, but not a companion app: it never simulat
 
 ## Pricing
 
-- **Free tier:** capped at 50 total AI messages, for life (not per day, per month, or per session: a cumulative lifetime cap).
-- **Premium tier:** an in-app subscription (managed via RevenueCat) that removes the 50-message lifetime cap permanently, and raises the daily limits on voice calls, AI images, and bedtime stories. Real-time safety alerts, daily AI insights, and the weekly email recap are included on the free tier too, at no reduced level compared to premium.
-- **Daily message limit:** independent of the tier, every account has a configurable daily limit set by the parent, from 10 to 100 messages per day in steps of 10 (default 50), resetting each day in the child's local timezone. This limit does not lift the 50-message lifetime cap on the free tier.
-- **Voice call quota:** 5 cumulative minutes for life on the free tier, 10 minutes per day on premium. Independent of the text message quotas.
+- **Free tier:** 30 AI messages for life (a cumulative lifetime cap, not per day or per month), at most 15 per day so the free messages last several days.
+- **Premium tier:** an in-app subscription (managed via RevenueCat) that removes the free message cap permanently, and raises the daily limits on voice calls, AI images, and bedtime stories. Real-time safety alerts, daily AI insights, and the weekly email recap are included on the free tier too, at no reduced level compared to premium.
+- **Daily message limit:** independent of the tier, every account has a configurable daily limit set by the parent, from 10 to 100 messages per day in steps of 10 (default 50), resetting each day in the child's local timezone. This limit does not lift the 30-message lifetime cap on the free tier.
+- **Voice call quota:** 2 cumulative minutes for life on the free tier, 10 minutes per day on premium. Independent of the text message quotas.
 - **AI image quota:** 5 images for life on the free tier, 15 images per day on premium. Independent of the other quotas; only images that actually generate successfully count against it.
 - **Bedtime story quota:** 1 story for life on the free tier (up to 5 minutes), 1 story per day on premium (up to 15 minutes). Independent of the other quotas.
 
@@ -46,7 +46,7 @@ Children who cannot yet read or write fluently can use Yoggi entirely by voice: 
 
 In addition to voice input inside text chat, Yoggi has a dedicated real-time voice call mode, opened with a phone-icon button on the home screen and inside conversations. It's a live, continuous two-way audio exchange (the child speaks, Yoggi replies out loud) with no text displayed on screen at all, on a dedicated call screen with a single button to hang up.
 
-- **Quota:** separate from text messages and images: 5 cumulative minutes for life on the free tier, 10 minutes per day on premium. The paywall appears once the quota is reached, in place of the call.
+- **Quota:** separate from text messages and images: 2 cumulative minutes for life on the free tier, 10 minutes per day on premium. The paywall appears once the quota is reached, in place of the call.
 - **Safety:** after the call ends, the exchanged content is analyzed for safety using the same mechanism as text messages (see "Real-time safety alerts" below), with the same consequences: an immediate email to the parent for an urgent alert, a badge in the history for a warning.
 - **Parent visibility:** the call appears in the read-only history as a conversation item, with its duration and, if relevant, a safety badge. The full transcript is viewable only by the parent; the child sees that the call happened in their own feed but cannot reopen or replay its content.
 - **Behavior:** the Free Play / Learning Mode setting applies to real-time voice calls exactly as it does to text chat.
@@ -73,13 +73,22 @@ Yoggi can tell a full bedtime story out loud, narrated in the same voice used el
 - **Library:** every story the child has had told is saved in a dedicated library ("My Stories"), with a title, a neutral summary that doesn't reveal the ending, and its duration.
 - **Quota:** separate from text messages, voice calls, and images: 1 story for life on the free tier (up to 5 minutes), 1 new story per day on premium (up to 15 minutes).
 
+## Photos, games, creations and trophies
+
+- **Show Yoggi a photo:** a dedicated camera button lets the child take or pick a photo (always cropped square) and send it with or without a message. Yoggi actually sees it and can talk about it, or use it as the base for a drawing. A photo showing a real person, the child included, is never sent to the image generator: Yoggi describes the person kindly and draws them as an illustrated character instead. A photo raising a safety concern triggers the same parent alert as any other message. Quota: 5 photos for life on the free tier, 15 per day on premium. Parents can turn the feature off.
+- **Interactive stories and quick replies:** when Yoggi tells an interactive story or asks a short closed question, it can offer 1 to 3 one-tap replies, so a child who can't read or write well yet can choose what happens next.
+- **"Guess the Word":** a mini-game on its own screen where the child finds a mystery word chosen by Yoggi by asking questions or guessing. Difficulty adapts to age. After 20 tries, Yoggi reveals the word on a neutral end screen, never framed as a defeat. Quota: 2 games for life on the free tier, 10 per day on premium.
+- **"My creations" gallery:** every drawing Yoggi made for the child stays available in a gallery, newest first. Read-only.
+- **Trophies:** each interest from the topic catalog can be unlocked as a trophy by tapping the highlighted topic of the day on the home screen, at most one new trophy per day. Trophies are never lost and there is no countdown.
+- **Report button:** a small flag lets anyone report AI-generated content (a reply, a drawing, a story) without leaving the app.
+
 ## Real-time safety alerts (free and premium)
 
-Every message a child sends is classified, at the moment it's sent, into one of three levels:
+Every message a child sends (and every photo they show) is classified, at the moment it's sent, into one of three levels:
 
 - **none**: nothing to flag.
 - **warning**: worth keeping an eye on. Logged and shown as a visible badge on that day's conversation in the parent's history. No extra notification is sent.
-- **urgent**: needs the parent's attention now. In addition to the history badge, an email is sent to the parent immediately, with a short AI-written explanation for the adult. Only one urgent email is sent per child per conversation-day, even if multiple urgent messages occur, to avoid alerting the parent repeatedly for the same day.
+- **urgent**: needs the parent's attention now. In addition to the history badge, an email is sent to the parent immediately (if a parent account exists), with a short AI-written explanation for the adult. Only one urgent email is sent per child per conversation-day, even if multiple urgent messages occur, to avoid alerting the parent repeatedly for the same day.
 
 This classification is produced by the same AI call that generates the reply to the child (no added latency, no separate keyword filter: it's a contextual judgment by the model). It runs independently of the conversation itself and never blocks or alters the answer given to the child; it only informs the parent in parallel. Every alert explicitly states it is AI-generated and is not a substitute for a parent's judgment or for professional medical or psychological advice.
 
@@ -93,14 +102,15 @@ This classification is produced by the same AI call that generates the reply to 
 - Optional 4-digit PIN, stored securely on the device, to lock the settings screen against the child.
 - Configurable daily message limit (10–100, steps of 10).
 - Toggle for the weekly email recap.
-- Editable child profile (name, age, language) and interests, editable at any time from settings (interests are also set during onboarding).
+- Editable child profile (name, age, language) and interests, editable at any time from settings.
+- Per-feature switches (voice calls, photos, bedtime stories, Guess the Word): a feature switched off disappears entirely from the child's app.
 - Sensitive topics list, parent-only, never shown during onboarding.
 - Read-only conversation history with safety-alert badges.
 
 ## Account and data model
 
-- One parent account, authenticated via Google, Apple Sign-In, or a one-time 6-digit email code (Supabase Auth, verified with JWTs on the backend).
-- One child profile per parent account in the current version.
+- A parent account is optional. Parents can tap "Continue without an account" during setup: the child gets the full app (same free quotas, same subscription) and everything is kept if an account is created later from settings. An account (Google, Apple Sign-In, or a one-time 6-digit email code) is needed only for parent emails (safety alerts, weekly recap), PIN recovery, and keeping creations across devices.
+- One child profile per family in the current version.
 - The child has no separate account or login.
 - Every backend request is scoped to the authenticated parent; one parent's data is never visible to another.
 - No ads and no commercial use of the child's conversations. To generate replies, the child's message, age, gender and interests are shared with AI partners (OpenAI, Google); the child's first name never is.
@@ -132,7 +142,7 @@ Yes. Yoggi supports voice-first interaction for children who can't yet read or t
 No. Yoggi is designed to support parental supervision, not replace it. Every AI-generated alert or summary states clearly that it is AI-generated, is not a diagnosis, and is not a substitute for the parent's own judgment or for professional advice.
 
 **Is Yoggi free?**
-Yes, up to 50 total messages for life. A premium subscription removes that lifetime cap and raises the daily limits on voice calls, images, and bedtime stories; the daily message limit, real-time safety alerts, daily AI insights, and the weekly recap are available on the free tier as well.
+Yes, up to 30 messages for life (at most 15 per day). A premium subscription removes that lifetime cap and raises the daily limits on voice calls, images, and bedtime stories; the daily message limit, real-time safety alerts, daily AI insights, and the weekly recap are available on the free tier as well.
 
 **What languages does Yoggi support?**
 19 languages: English, French, German, Spanish, Portuguese (Portugal and Brazil), Italian, Dutch, Polish, Turkish, Ukrainian, Vietnamese, Japanese, Korean, Chinese (Simplified and Traditional), Hindi, Russian, and Indonesian.

@@ -18,6 +18,21 @@
 - AI image generation: when a child asks to see something, Yoggi can generate a cartoon-style image inside the chat, enforced through three layers of safety (chat safety rules, a fixed server-side style template, and the image provider's own filters)
 - AI bedtime stories: Yoggi tells a full bedtime story out loud, in the same voice used elsewhere in the app, either from an idea the child describes or as a complete surprise Yoggi invents. A short preparation step checks the idea is age-appropriate before any story is generated, and every story ends on a calm, positive note. Playback continues with the screen locked or off, with lock-screen controls
 - Free Play / Learning Mode: a parent-only setting choosing whether Yoggi leans toward open, playful conversation (Free Play) or always steers back toward reflection and discovery (Learning Mode). Applies to text chat and voice calls alike; never changes safety rules or age adaptation
+- Show Yoggi a photo: the child takes or picks a photo and Yoggi talks about it, or turns it into a drawing. Photos showing a real person are never sent to the image generator. Parents can turn the feature off
+- Interactive stories: Yoggi can tell choose-your-own-adventure stories where the child picks what happens next with one tap
+- "Guess the Word" mini-game: the child finds a mystery word chosen by Yoggi by asking questions, difficulty adapted to age
+- "My creations" gallery: every drawing Yoggi made for the child stays available in one place
+- Daily trophies: one new trophy to unlock each day, a collection that only grows (no streak to lose, no countdown)
+- Report button: any AI-generated content (reply, drawing, story) can be reported from inside the app in one tap
+
+## Why parents choose Yoggi over general AI chatbots
+
+- Built for children from day one (ages 3–15), not an adult chatbot with a teen mode added later
+- Parents see everything: full conversation history (including voice call transcripts), a free daily AI summary of topics and mood, and an optional weekly email recap
+- Parents are told when it matters: a concerning message triggers an immediate email to the parent, and is badged in the history
+- Yoggi sends the child back to a trusted adult when a topic is bigger than a chat, and never presents itself as a friend replacing family or real friends
+- Parents stay in control: PIN-locked settings, daily message limit, each feature (voice calls, photos, bedtime stories, games) can be switched off
+- No ads, no outside links, no commercial use of conversations, no account required to start
 
 ## Platforms
 
@@ -26,9 +41,9 @@
 
 ## Pricing
 
-- Free tier: capped at 50 total AI messages for life, plus a configurable daily limit (10–100 messages/day)
-- Premium subscription: removes the 50-message lifetime cap, and raises the daily limits on voice calls, images, and bedtime stories; the configurable daily message limit still applies
-- Voice calls: 5 cumulative minutes for life on the free tier, 10 minutes per day on premium (separate quota from text messages)
+- Free tier: 30 AI messages for life, at most 15 per day, plus a parent-configurable daily limit (10–100 messages/day); also 5 drawings, 5 photos, 2 minutes of voice call, 1 bedtime story (up to 5 minutes) and 2 Guess the Word games for life
+- Premium subscription: removes the free message cap, and raises the daily limits on voice calls, images, photos, games and bedtime stories; the parent's daily message limit still applies
+- Voice calls: 2 cumulative minutes for life on the free tier, 10 minutes per day on premium (separate quota from text messages)
 - AI images: 5 images for life on the free tier, 15 per day on premium (separate quota; only successful generations count)
 - Bedtime stories: 1 story for life on the free tier (up to 5 minutes), 1 per day on premium (up to 15 minutes), separate from the other quotas
 
@@ -36,7 +51,9 @@
 
 - PIN-protected Parents' Corner
 - Full chat history readable by parents
-- One child profile per parent account, fully customizable (name, age, language, interests, sensitive topics)
+- Daily message limit (10–100 messages/day)
+- Each feature (voice calls, photos, bedtime stories, Guess the Word) can be switched off by the parent
+- One child profile per family, fully customizable (name, age, language, interests, sensitive topics)
 
 ## Languages supported
 
@@ -45,15 +62,15 @@
 ## Privacy
 
 - No ads, no commercial use of children's conversations
-- The child has no account of their own; only the parent signs in
+- The child has no account of their own; a parent account is optional (every feature works without one) and is only needed to receive emails (safety alerts, weekly recap) and to keep creations when changing phones
 - The child's first name is never shared with AI partners (OpenAI, Google)
 - Available on the Apple App Store and Google Play Store
 
 ## Age groups
 
-- Ages 3–5: Maximum 3-sentence answers, simple vocabulary, voice-first interface
-- Ages 6–10: Up to 5-sentence answers, accessible language, homework help
-- Ages 11–15: Up to 7-sentence answers, richer explanations, study assistance
+- Ages 3–7: at most 3 sentences per answer, very simple vocabulary, voice-first interface
+- Ages 8–11: up to 5 sentences, accessible language, homework help
+- Ages 12–15: short answers in a natural teen tone, no forced enthusiasm, direct help with homework
 
 ## Comparisons and keyword pages
 
